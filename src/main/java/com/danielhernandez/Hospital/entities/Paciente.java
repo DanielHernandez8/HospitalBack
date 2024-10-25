@@ -7,7 +7,8 @@ import jakarta.persistence.Id;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.Date;
+import java.time.LocalDate;
+
 @Entity
 @Getter
 @Setter
@@ -17,5 +18,5 @@ public class Paciente {
     int id;
     String nombre;
     String apellido;
-    Date fechaAlta;
+    LocalDate fechaAlta;
 }
